@@ -1,0 +1,210 @@
+/* adam - bold */
+@font-face {
+    font-family: 'adam_bold';
+    src: url('fonts/adam-bold-webfont.woff2') format('woff2'),
+         url('fonts/adam-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* adam - light */
+@font-face {
+    font-family: 'adam_nrw';
+    src: url('fonts/adam-light-webfont.woff2') format('woff2'),
+         url('fonts/adam-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* adam - medium */
+@font-face {
+    font-family: 'adam_med';
+    src: url('fonts/adam-medium-webfont.woff2') format('woff2'),
+         url('fonts/adam-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	font-family: 'adam_med';
+	text-align: center;
+	-webkit-font-smoothing: subpixel-antialiased;
+	backface-visibility: hidden;
+}
+
+body {
+	background-color: black;
+	color: white;
+}
+
+video {
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   min-width: 100%;
+   min-height: 100%;
+   width: auto;
+   height: auto;
+   z-index: -100;
+	transform: translate(-50%, calc(-50% - .5px));
+   background-size: cover;
+   filter: opacity(66%) blur(5px);
+   -webkit-animation: hue 6.66s infinite linear;
+   transition: 4s opacity;
+}
+
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+  -moz-transition: color .3s linear;
+  -o-transition: color .3s linear;
+  -webkit-transition: color .3s linear;
+  transition: color .3s linear;
+  color: #cedde2;
+}
+
+#c {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#ico {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#ico img {
+	border-radius: 50%;
+	border: 3px solid white;
+	filter: drop-shadow(0px 0px 2px black);
+	box-shadow: inset 0px 0px 5px pink;
+}
+
+#info {
+	position: fixed;
+	top: 73%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#info h1 {
+	line-height: 1.1px;
+}
+
+#info h2 {
+	font-size: 14.5px;
+	font-style: italic;
+}
+
+#name {
+	position: fixed;
+	top: 29.5%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#name h2 {
+	font-size: 14.5px;
+	font-style: italic;
+}
+
+#name h1 {
+	line-height: 1px;
+}
+
+#menul {
+		position: fixed;
+		top: 50%;
+		left: 37%;
+		-webkit-transform: translate(-50%, -50%);
+    	transform: translate(-50%, -50%);
+    	text-align: right;
+    	line-height: 50px;
+}
+
+#menur {
+		position: fixed;
+		top: 50%;
+		left: 63%;
+		-webkit-transform: translate(-50%, -50%);
+    	transform: translate(-50%, -50%);
+    	text-align: left;
+    	line-height: 50px;
+}
+
+#music {
+		position: fixed;
+		top: 8%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+    	transform: translate(-50%, -50%);
+    	text-align: center;
+}
+
+#vol {
+		position: fixed;
+		top: 92%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+    	transform: translate(-50%, -50%);
+    	text-align: center;
+}
+
+/* slider - vol */
+.slider {
+  width: 100%;
+  height: 1.5vh;
+  border-radius: 5px;
+  background: var(--slider-color);
+  outline: none;
+  -webkit-appearance: none;
+  box-shadow: 1px 1px 10px black;
+  -webkit-transition: .4s;
+  transition-duration: .4s;
+  transition-timing-function: ease-out;
+}
+.slider:hover {
+  -webkit-transition: .4s;
+  transition-duration: .4s;
+  transition-timing-function: ease-out;
+  box-shadow: 0px 0px 20px white;
+  transform: scale(1.03);
+}
+.slider::-webkit-slider-thumb {
+  width: 2.5vh;
+  height: 1.5vh;
+  cursor: pointer;
+  appearance: none;
+  border-radius: 50%;
+  background: var(--slider-thumb-color);
+  -webkit-appearance: none;
+  box-shadow: 1px 1px 10px black;
+}
+.slider::-moz-range-thumb {
+  width: 2.5vh;
+  height: 1.5vh;
+  cursor: pointer;
+  appearance: none;
+  border-radius: 50%;
+  background: var(--slider-thumb-color);
+  -moz-appearance: none;
+  box-shadow: 1px 1px 10px black;
+}
