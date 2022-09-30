@@ -1,88 +1,50 @@
 <!-- Criado Por Yusuke#0001  -->
-<html> 
-	<head>
-		<title>Pwnz You "野心"</title>
-		<link href="ssc.css" rel="stylesheet" type="text/css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> 
-		<script src="https://kit.fontawesome.com/a624a53357.js" crossorigin="anonymous"></script>
-		<link rel="icon" href="Icon.ico" type="image/png"/>
-		<meta name"viewport" content="width=device-width, initial-scale=">
-	<body>
-		<audio id="bgm" preload="auto" loop=""> 
-    		<source id="music" src="Truthless.mp3" autoplay type="audio/mpeg">
-    		<script>
-
-        		var audio = document.currentScript.parentElement;
-        		audio.volume = 0.3;
-      		</script>
-    	</audio>
-		<video id="bgVideo" preload="auto" src="Wallpaper.mp4" muted autoplay loop></video>
-			<div id="ico">
-				<img class="animate__animated animate__rotateIn" src="Logo.ico" width="200px" height="200px" />
-			</div>
-			<div id="info">
-				<h1 class="animate__animated animate__zoomIn" style="webkit-animation-delay: 1.5s; animation-delay: 1.5s;">Y S K</h1>
-				<hr width="50%" class="animate__animated animate__fadeIn" style="webkit-animation-delay: 2.1s; animation-delay: 2.1s;" />
-				<h2 class="animate__animated animate__zoomIn" style="webkit-animation-delay: 2.3s; animation-delay: 2.3s;">"Be Simple"</h2>
-			</div>
-
-			<div id="menul">
-				<h3 class="animate__animated animate__fadeInRight" style="webkit-animation-delay: 0.5s; animation-delay: 0.5s;"><a href="https://github.com/UserWhare"><i class="fab fa-github"></i></a></h3>
-				<h3 class="animate__animated animate__fadeInRight" style="webkit-animation-delay: 0.7s; animation-delay: 0.7s;"><a href="https://www.instagram.com/d4rksold4t/"><i class="fab fa-instagram"></i></a>&nbsp;&nbsp;</h3>
-				<h3 class="animate__animated animate__fadeInRight" style="webkit-animation-delay: 0.9s; animation-delay: 0.9s;"><a href="https://youtu.be/wbG1Yr3-wts"><i class="fa fa-heartbeat"></i></a></h3>
-			</div>
-
-			<div id="menur">
-				<h3 class="animate__animated animate__fadeInLeft" style="webkit-animation-delay: 0.9s; animation-delay: 0.9s;"><a href="https://discord.com/users/476452529559961613/"><i class="fab fa-discord"></i></a></h3>
-				<h3 class="animate__animated animate__fadeInLeft" style="webkit-animation-delay: 0.7s; animation-delay: 0.7s;">&nbsp;&nbsp;<a href="https://steamcommunity.com/id/YsK_0x5/"><i class="fab fa-steam"></i></a></h3>
-				<h3 class="animate__animated animate__fadeInLeft" style="webkit-animation-delay: 0.5s; animation-delay: 0.5s;"><a href="https://www.twitch.tv/yusukexs"><i class="fab fa-twitch"></i></a></h3>
-			</div>
-
-			<div id="music">
-			<h3 class="animate__animated animate__fadeIn" style="font-size: 12px; line-height: 2px; webkit-animation-delay: 3.0s; animation-delay: 3.0s;">now playing</h3>
-			<hr width="70%" class="animate__animated animate__zoomIn" style="webkit-animation-delay: 3.2s; animation-delay: 3.2s;">
-			<h3 class="animate__animated animate__fadeIn" style="font-size: 11px; webkit-animation-delay: 3.4s; animation-delay: 3.4s;">Type Beat - Truthless</h3>
-			</div>
-			<div id="vol">
-			<span class="animate__animated animate__zoomIn" style="webkit-animation-delay: 3.2s; animation-delay: 3.2s;"><i class="fas fa-volume-down" style="font-size: 12px;"></i> <input id="vol-control" class="slider" type="range" min="0" max="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume(this.value)" style="width: 50%;"> <i class="fas fa-volume-up" style="font-size: 12px;"></i></span>
-			<h3 class="animate__animated animate__fadeIn" style="font-size: 11px; webkit-animation-delay: 3.4s; animation-delay: 3.4s;" onclick="togglePlay();playPause();"><i class="fa fa-play" style="font-size: 9px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-pause" style="font-size: 9px;"></i></h3>
-			</div>
-	<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
-	<script>
-  function playPause() {
-      var icon = document.getElementById("play-pause");
-        if (icon.classList.contains("fa-play")) { //<i class="fas fa-play"></i>
-          icon.classList.remove("fa-play"); // <i class="fas fa-play"></i>
-          icon.classList.add("fa-pause");
-      } else {
-         icon.classList.remove("fa-pause");
-         icon.classList.add("fa-play"); // <i class="fas fa-play"></i>
-      }
-   }
-
-  var myAudio = document.getElementById("bgm");
-  var isPlaying = false;
-
-  function togglePlay() {
-    if (isPlaying) {
-      myAudio.pause()
-    } else {
-      myAudio.play();
-    }
-  };
-  myAudio.onplaying = function() {
-    isPlaying = true;
-  };
-  myAudio.onpause = function() {
-    isPlaying = false;
-  };
-
-  window.SetVolume = function(val)
-  {
-    var player = document.getElementById('bgm');
-    console.log('Before: ' + player.volume);
-    player.volume = val / 100;
-    console.log('After: ' + player.volume);
-  }
-</script>
+<html  lang="pt-BR" translate="no">
+   <head>
+      <meta charset = "utf-8" />
+      <meta name="google" content="notranslate">
+      <meta name"viewport" content="width=device-width, initial-scale=">
+      <link href="ssc.css" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+      <link rel = "icon" href = "https://i.ibb.co/QJQvBCH/Wolf-5.png" type = "image/x-icon">
+      <script src="https://kit.fontawesome.com/a624a53357.js" crossorigin="anonymous"></script>
+      <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+      <script type="text/javascript" src="scripts/title.js"></script>
+      <script type="text/javascript" src="scripts/hide.js"></script>
+   <body oncontextmenu="return false;">
+      <audio id="bgm" preload="auto" autoplay loop>
+         <source id="music" src="typebeat.mp3" autoplay type="audio/mp3"/>
+      </audio>
+      <video id="bgVideo" preload="auto" src="Wallpaper.mp4" muted autoplay loop></video>
+      <div id="ico">
+         <img class="animate__animated animate__rotateIn" src="Logo.ico" width="200px" height="200px" />
+      </div>
+      <div id="info">
+         <h1 class="animate__animated animate__zoomIn" style="webkit-animation-delay: 1.5s; animation-delay: 1.5s;">Y S K</h1>
+         <hr width="50%" class="animate__animated animate__fadeIn" style="webkit-animation-delay: 2.1s; animation-delay: 2.1s;" />
+         <h2 class="animate__animated animate__zoomIn" style="webkit-animation-delay: 2.3s; animation-delay: 2.3s;">"Be Simple"</h2>
+      </div>
+      <div id="menul">
+         <h3 class="animate__animated animate__fadeInRight" style="webkit-animation-delay: 0.5s; animation-delay: 0.5s;"><a href="https://github.com/UserWhare"><i class="fab fa-github"></i></a></h3>
+         <h3 class="animate__animated animate__fadeInRight" style="webkit-animation-delay: 0.7s; animation-delay: 0.7s;"><a href="https://www.instagram.com/userwhare/"><i class="fab fa-instagram"></i></a>&nbsp;&nbsp;</h3>
+         <h3 class="animate__animated animate__fadeInRight" style="webkit-animation-delay: 0.9s; animation-delay: 0.9s;"><a href="https://youtu.be/wbG1Yr3-wts"><i class="fa fa-heartbeat"></i></a></h3>
+      </div>
+      <div id="menur">
+         <h3 class="animate__animated animate__fadeInLeft" style="webkit-animation-delay: 0.9s; animation-delay: 0.9s;"><a href="https://discord.com/users/940390599742357554/"><i class="fab fa-discord"></i></a></h3>
+         <h3 class="animate__animated animate__fadeInLeft" style="webkit-animation-delay: 0.7s; animation-delay: 0.7s;">&nbsp;&nbsp;<a href="https://steamcommunity.com/id/YsK_0x5/"><i class="fab fa-steam"></i></a></h3>
+         <h3 class="animate__animated animate__fadeInLeft" style="webkit-animation-delay: 0.5s; animation-delay: 0.5s;"><a href="https://www.twitch.tv/skarzian"><i class="fab fa-twitch"></i></a></h3>
+      </div>
+      <div id="music">
+         <h3 class="animate__animated animate__fadeIn" style="font-size: 12px; line-height: 2px; webkit-animation-delay: 3.0s; animation-delay: 3.0s;">now playing</h3>
+         <hr width="70%" class="animate__animated animate__zoomIn" style="webkit-animation-delay: 3.2s; animation-delay: 3.2s;">
+         <h3 class="animate__animated animate__fadeIn" style="font-size: 11px; webkit-animation-delay: 3.4s; animation-delay: 3.4s;">Type Beat - Truthless</h3>
+      </div>
+      <div id="vol">
+         <span class="animate__animated animate__zoomIn" style="webkit-animation-delay: 3.2s; animation-delay: 3.2s;"><i class="fas fa-volume-down" style="font-size: 12px;"></i> <input id="vol-control" class="slider" type="range" min="0" max="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume(this.value)" style="width: 50%;"> <i class="fas fa-volume-up" style="font-size: 12px;"></i></span>
+         <h3 class="animate__animated animate__fadeIn" style="font-size: 11px; webkit-animation-delay: 3.4s; animation-delay: 3.4s;" onclick="togglePlay();playPause();">Play - Pause</h3>
+      </div>
+      <script type="text/javascript" src="scripts/play.js"></script>
+      <script type="text/javascript" src="scripts/pause.js"></script>
+      <script type="text/javascript" src="scripts/volume.js"></script>
+   </body>
 </html>
