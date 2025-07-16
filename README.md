@@ -2,7 +2,7 @@
 
 Um site de apresentação pessoal com um design moderno e animado, servindo como um hub central para redes sociais e projetos.
 
-> ✨ **Ver ao vivo:** [**Clique Aqui**](https://userwhare.github.io/d4rksold4t/)
+> ✨ **Ver ao vivo:** [**Clique Aqui**](https://userwhare.github.io/D4rksold4t/)
 
 ---
 
