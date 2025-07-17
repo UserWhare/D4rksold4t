@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
-
     const audioPlayer = document.getElementById('bgm');
     const volumeSlider = document.getElementById('volume-slider');
     const playPauseButton = document.getElementById('play-pause-button');
+    const musicDiv = document.getElementById('music');
 
     const startMusicOnFirstClick = () => {
         audioPlayer.play();
@@ -16,22 +16,31 @@ document.addEventListener('DOMContentLoaded', () => {
     setVolume(volumeSlider.value);
     volumeSlider.addEventListener('input', (event) => setVolume(event.target.value));
 
-    let isPlaying = false;
-    audioPlayer.onplaying = () => {
-        isPlaying = true;
-        playPauseButton.textContent = "Pause";
-    };
-    audioPlayer.onpause = () => {
-        isPlaying = false;
-        playPauseButton.textContent = "Play";
-    };
     const togglePlay = () => {
-        isPlaying ? audioPlayer.pause() : audioPlayer.play();
+        if (audioPlayer.paused) {
+            audioPlayer.play();
+            playPauseButton.textContent = "Pause";
+            musicDiv.style.display = "block"; 
+        } else {
+            audioPlayer.pause();
+            playPauseButton.textContent = "Play";
+            musicDiv.style.display = "none";   
+        }
     };
+    playPauseButton.textContent = "Play";
     playPauseButton.addEventListener('click', togglePlay);
 
+    audioPlayer.addEventListener('play', () => {
+        playPauseButton.textContent = "Pause";
+        musicDiv.style.display = "block";
+    });
+    audioPlayer.addEventListener('pause', () => {
+        playPauseButton.textContent = "Play";
+        musicDiv.style.display = "none";
+    });
+
     (function titleScroller() {
-        const message = "   [# S 4 F 3 0 n W 4 y #]";
+        const message = "  [# S 4 F 3 0 n W 4 y #]";
         let position = 0;
         let direction = 'forward';
         const speed = 150;
@@ -41,34 +50,32 @@ document.addEventListener('DOMContentLoaded', () => {
                 position++;
                 if (position > message.length) {
                     direction = 'backward';
-                    setTimeout(scroll, speed * 5);
+                    setTimeout(scroll, speed * 10);
                     return;
                 }
                 document.title = message.substring(0, position);
-            } else {
+            } else { 
                 position--;
                 if (position < 0) {
+                    position = 0;
                     direction = 'forward';
                     setTimeout(scroll, speed * 5);
                     return;
                 }
-                const start = Math.max(0, message.length - position);
-                document.title = message.substring(start);
+                document.title = message.substring(0, position);
             }
             setTimeout(scroll, speed);
         }
         scroll();
     })();
 
-    document.addEventListener('contextmenu', (e) => e.preventDefault());
-    
+    document.addEventListener('contextmenu', (e) => {
+        e.preventDefault();
+    });
+
     document.addEventListener('keydown', (e) => {
-        if (e.key === 'F12') {
-            e.preventDefault();
-        }
-        if (e.ctrlKey && ['u', 'c', 'v'].includes(e.key.toLowerCase())) {
+        if (e.ctrlKey && e.key.toLowerCase() === 'u') {
             e.preventDefault();
         }
     });
-
 });
