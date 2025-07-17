@@ -7,6 +7,7 @@
     <title># S 4 F 3 0 n W 4 y #</title>
     
     <link href="ssc.css" rel="stylesheet" type="text/css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="icon" href="https://i.ibb.co/QJQvBCH/Wolf-5.png" type="image/x-icon">
     
@@ -25,35 +26,35 @@
 
     <div id="info">
         <h1 class="animate__animated animate__zoomIn" style="animation-delay: 1.5s;">Y S K</h1>
-        <hr width="50%" class="animate__animated animate__fadeIn" style="animation-delay: 2.1s;" />
+        <hr width="50%" class="animate__animated animate__fadeIn" style="animation-delay: 1.7s;" />
         <h2 class="animate__animated animate__zoomIn" style="animation-delay: 2.3s;">"Be Simple"</h2>
     </div>
 
-    <div id="menul">
-        <h3 class="animate__animated animate__fadeInRight" style="animation-delay: 0.5s;"><a href="Sua GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a></h3>
-        <h3 class="animate__animated animate__fadeInRight" style="animation-delay: 0.7s;"><a href="Seu Insta" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></h3>
-        <h3 class="animate__animated animate__fadeInRight" style="animation-delay: 0.9s;"><a href="#" title="Link do Coração"><i class="fa fa-heartbeat"></i></a></h3>
-    </div>
-
-    <div id="menur">
-        <h3 class="animate__animated animate__fadeInLeft" style="animation-delay: 0.9s;"><a href="Seu Discord" target="_blank" rel="noopener noreferrer"><i class="fab fa-discord"></i></a></h3>
-        <h3 class="animate__animated animate__fadeInLeft" style="animation-delay: 0.7s;"><a href="Sua Steam" target="_blank" rel="noopener noreferrer"><i class="fab fa-steam"></i></a></h3>
-        <h3 class="animate__animated animate__fadeInLeft" style="animation-delay: 0.5s;"><a href="Sua Twitch" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitch"></i></a></h3>
-    </div>
-
     <div id="music">
-        <h3 class="animate__animated animate__fadeIn" style="font-size: 12px; line-height: 2px; animation-delay: 3.0s;">now playing</h3>
-        <hr width="70%" class="animate__animated animate__zoomIn" style="animation-delay: 3.2s;">
-        <h3 class="animate__animated animate__fadeIn" style="font-size: 11px; animation-delay: 3.4s;">Type Beat - Truthless</h3>
+        <h3 class="animate__animated animate__fadeIn" style="font-size: 13px; line-height: 2px; animation-delay: 1.0s;">now playing</h3>
+        <hr class="animate__animated animate__zoomIn" style="animation-delay: 1.0s;">
+        <h3 class="animate__animated animate__fadeIn" style="font-size: 12px; animation-delay: 1.0s;">Type Beat - Truthless</h3>
     </div>
 
-    <div id="vol">
-        <span class="animate__animated animate__zoomIn" style="animation-delay: 3.2s;">
-            <i class="fas fa-volume-down" style="font-size: 12px;"></i>
-            <input id="volume-slider" class="slider" type="range" min="0" max="100" step="1" value="40">
-            <i class="fas fa-volume-up" style="font-size: 12px;"></i>
-        </span>
-        <h3 id="play-pause-button" class="animate__animated animate__fadeIn" style="font-size: 11px; animation-delay: 3.4s; cursor: pointer;">Play - Pause</h3>
+    <div id="menu-container">
+        <a href="Sua GitHub" target="_blank" rel="noopener noreferrer" class="icon-link animate__animated animate__fadeInRight" style="animation-delay: 0.5s;"><i class="fab fa-github"></i></a>
+        <a href="Seu Insta" target="_blank" rel="noopener noreferrer" class="icon-link animate__animated animate__fadeInRight" style="animation-delay: 0.7s;"><i class="fab fa-instagram"></i></a>
+        <a href="#" title="Link do Coração" class="icon-link animate__animated animate__fadeInRight" style="animation-delay: 0.9s;"><i class="fa fa-heartbeat"></i></a>
+        
+        <a href="Seu Discord" target="_blank" rel="noopener noreferrer" class="icon-link animate__animated animate__fadeInLeft" style="animation-delay: 0.9s;"><i class="fab fa-discord"></i></a>
+        <a href="Sua Steam" target="_blank" rel="noopener noreferrer" class="icon-link animate__animated animate__fadeInLeft" style="animation-delay: 0.7s;"><i class="fab fa-steam"></i></a>
+        <a href="Sua Twitch" target="_blank" rel="noopener noreferrer" class="icon-link animate__animated animate__fadeInLeft" style="animation-delay: 0.5s;"><i class="fab fa-twitch"></i></a>
+    </div>
+
+    <div id="player">
+        <div id="vol">
+            <span class="animate__animated animate__zoomIn" style="animation-delay: 2.8s;">
+                <i class="fas fa-volume-down" style="font-size: 12px;"></i>
+                <input id="volume-slider" class="slider" type="range" min="0" max="100" step="1" value="50">
+                <i class="fas fa-volume-up" style="font-size: 12px;"></i>
+            </span>
+            <h3 id="play-pause-button" class="animate__animated animate__fadeIn" style="font-size: 11px; animation-delay: 2.8s; cursor: pointer;">Play - Pause</h3>
+        </div>
     </div>
 
     <script src="scripts/main.js"></script>
